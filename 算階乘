@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    long long int sum=1;
+    while(scanf("%d",&num)!=EOF)
+    {
+        sum=1;
+        if(num==0)
+        {
+            printf("1\n");
+        }
+        else
+        {
+            for(int i=1;i<=num;i++)
+            {
+                sum=sum*i;
+            }
+            printf("%lld\n",sum);
+        }
+    }
+    return 0;
+}
