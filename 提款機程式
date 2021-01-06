@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int cnt;
+    scanf("%d",&cnt);
+    int table[6][6];
+    int money[cnt];
+    table[0][0]=123;
+    table[0][1]=456;
+    table[1][0]=456;
+    table[1][1]=789;
+    table[2][0]=789;
+    table[2][1]=888;
+    table[3][0]=336;
+    table[3][1]=558;
+    table[4][0]=775;
+    table[4][1]=666;
+    table[5][0]=566;
+    table[5][1]=221;
+    money[0]=9000;
+    money[1]=5000;
+    money[2]=6000;
+    money[3]=10000;
+    money[4]=12000;
+    money[5]=7000;
+    int account;
+    int num;
+    for(int i=0;i<cnt;i++)
+    {
+        int flag=1;
+        scanf("%d %d",&account,&num);
+        for(int j=0;j<6;j++)
+        {
+            if(table[j][0]==account && table[j][1]==num)
+            {
+                flag=0;
+                printf("%d\n",money[j]);
+            }
+        }
+        if(flag==1)
+        {
+            printf("error\n");
+        }
+    }
+    return 0;
+}
