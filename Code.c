@@ -3,12 +3,20 @@
 
 int main()
 {
-    int kilo;
-    while(scanf("%d",&kilo)!=EOF)
+    int x;
+    int y;
+    while(scanf("%d %d",&x,&y)!=EOF)
     {
-        double mile;
-        mile = kilo*1.6;
-        printf("%.1f\n",mile);
+        int dis;
+        dis = x*x + y*y;
+        if(dis<=10000)
+        {
+            printf("inside\n");
+        }
+        else
+        {
+            printf("outside\n");
+        }
     }
     return 0;
 }
