@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int count;
+    scanf("%d",&count);
+    for(int i=0;i<count;i++)
+    {
+        char token;
+        int first_real;
+        int first_imag;
+        int second_real;
+        int second_imag;
+        scanf(" %c",&token);
+        scanf("%d",&first_real);
+        scanf("%d",&first_imag);
+        scanf("%d",&second_real);
+        scanf("%d",&second_imag);
+        if(token == '+')
+        {
+            printf("%d %d\n",first_real+second_real,first_imag+second_imag);
+        }
+        else if(token == '-')
+        {
+            printf("%d %d\n",first_real-second_real,first_imag-second_imag);
+        }
+        else if(token == '*')
+        {
+            int real_part;
+            int imag_part;
+            real_part = first_real*second_real - first_imag*second_imag;
+            imag_part = first_real*second_imag + first_imag*second_real;
+            printf("%d %d\n",real_part,imag_part);
+        }
+    }
+    return 0;
+}
