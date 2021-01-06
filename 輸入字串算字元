@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int len=0;
+    int wordcnt=0;
+    while(scanf("%s",str)!=EOF)
+    {
+        len = len+strlen(str);
+        wordcnt++;
+    }
+    printf("There are %d characters\n",len+wordcnt-1);
+    return 0;
+}
