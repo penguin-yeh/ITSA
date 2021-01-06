@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number;
+    while(scanf("%d",&number)!=EOF)
+    {
+        if(number>=3 && number<=5)
+        {
+            printf("Spring\n");
+        }
+        else if(number>=6 && number<=8)
+        {
+            printf("Summer\n");
+        }
+        else if(number>=9 && number<11)
+        {
+            printf("Autumn\n");
+        }
+        else if(number==12 || (number>0 && number<=2))
+        {
+            printf("Winter\n");
+        }
+    }
+    return 0;
+}
