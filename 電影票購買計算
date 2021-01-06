@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    int full;
+    int half;
+    int sum=0;
+    scanf("%d",&num);
+    for(int i=0;i<num;i++)
+    {
+        scanf("%d %d",&full,&half);
+        sum=250*full+half*175;
+        printf("%d\n",sum);
+    }
+
+    return 0;
+}
