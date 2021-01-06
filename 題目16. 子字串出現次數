@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char pat[200];
+    char string[1000];
+    int repeat=0;
+    while(scanf("%s %s",pat,string)!=EOF)
+    {
+        int pat_len=strlen(pat);
+        int str = strlen(string);
+        for(int i=0;i<=str-pat_len;i++)
+        {
+            int flag=1;
+            if(string[i]==pat[0])
+            {
+                for(int j=1;j<=pat_len-1;j++)
+                {
+                    if(string[i+j]!=pat[j])
+                    {
+                        flag=0;
+                    }
+                }
+                if(flag==1)
+                {
+                    repeat++;
+                }
+            }
+        }
+        printf("%d\n",repeat);
+    }
+    return 0;
+}
