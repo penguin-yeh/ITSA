@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float low,high;
+    while(scanf("%f%f",&low,&high)!=EOF)
+    {
+        float area;
+        area = low*high/2;
+        printf("%.1f\n",area);
+    }
+    return 0;
+}
