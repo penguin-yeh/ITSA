@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    int three;
+    int two;
+    int one;
+    int temp;
+    while(scanf("%d",&num)!=EOF)
+    {
+        temp=num;
+        three=temp/100;
+        temp=temp-three*100;
+        two=temp/10;
+        temp=temp-two*10;
+        one=temp;
+        if(num==three*three*three+two*two*two+one*one*one)
+        {
+            printf("Yes\n");
+        }
+        else
+        printf("No\n");
+    }
+    return 0;
+}
