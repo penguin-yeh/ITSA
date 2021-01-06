@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    int day;
+    int hour;
+    int min;
+    int sec;
+    while(scanf("%d",&num)!=EOF)
+    {
+        day=num/86400;
+        num=num-day*86400;
+        hour=num/3600;
+        num=num-hour*3600;
+        min=num/60;
+        num=num-min*60;
+        sec=num;
+        printf("%d days\n%d hours\n%d minutes\n%d seconds\n",day,hour,min,sec);
+    }
+    return 0;
+}
