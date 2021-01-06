@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    int number;
+    int num[100];
+    int cnt =0;
+    while(scanf("%d",&number)!=EOF)
+    {
+        num[cnt++]=number;
+    }
+    for(int i=0;i<cnt;i++)
+    {
+        if(i!=(cnt-1))
+        {
+            printf("%d ",num[cnt-1-i]);
+        }
+        if(i==(cnt-1))
+        {
+            printf("%d\n",num[cnt-1-i]);
+        }
+    }
+    return 0;
+}
