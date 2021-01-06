@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float number;
+    int gender;
+    while(scanf("%f%d",&number,&gender)!=EOF)
+    {
+        if(gender==1)
+        {
+            printf("%.1f\n",(number-80)*0.7);
+        }
+        else if(gender==2)
+        {
+            printf("%.1f\n",(number-70)*0.6);
+        }
+    }
+    return 0;
+}
