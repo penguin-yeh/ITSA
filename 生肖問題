@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int year;
+    scanf("%d",&year);
+    int birth = year%12;
+    birth = birth-3;
+    if(birth<0)
+    {
+        birth=birth+12;
+    }
+    if(birth==1)  printf("rat\n");
+    if(birth==2) printf("ox\n");
+    if(birth==3) printf("tiger\n");
+    if(birth==4) printf("rabbit\n");
+    if(birth==5) printf("dragon\n");
+    if(birth==6) printf("snake\n");
+    if(birth==7) printf("horse\n");
+    if(birth==8) printf("sheep\n");
+    if(birth==9) printf("monkey\n");
+    if(birth==10) printf("rooster\n");
+    if(birth==11) printf("dog\n");
+    if(birth==12) printf("pig\n");
+    return 0;
+}
