@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num;
+    int ten;
+    int five;
+    int one;
+    while(scanf("%d",&num)!=EOF)
+    {
+        ten=num/10;
+        num=num-ten*10;
+        five=num/5;
+        num=num-five*5;
+        one=num;
+        printf("NT10=%d\nNT5=%d\nNT1=%d\n",ten,five,one);
+    }
+    return 0;
+}
