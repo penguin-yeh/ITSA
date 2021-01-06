@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float num[100];
+    float number;
+    float max = -110000;
+    float min = 111111000;
+    int cnt=0;
+    while(scanf("%f",&number)!=EOF)
+    {
+        num[cnt++] = number;
+    }
+    for(int i=0;i<cnt;i++)
+    {
+        if(num[i]>max)
+        {
+            max = num[i];
+        }
+        if(num[i]<min)
+        {
+            min = num[i];
+        }
+    }
+    printf("maximum:%.2f\n",max);
+    printf("minimum:%.2f\n",min);
+    return 0;
+}
